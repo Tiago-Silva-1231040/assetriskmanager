@@ -43,7 +43,7 @@ services:
       POSTGRES_USER: '${DB_USERNAME}'
       POSTGRES_PASSWORD: '${DB_PASSWORD}'
     volumes:
-      - db-files:/var/lib/postgresql/data
+      - db-files:/var/lib/postgresql
     networks:
       - net
     healthcheck:
