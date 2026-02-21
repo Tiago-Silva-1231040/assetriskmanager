@@ -33,6 +33,7 @@ RUN npm run build --quiet --no-progress
 
 RUN mkdir -p /workdir/storage
 RUN mkdir -p /workdir/storage/logs
+RUN mkdir -p /workdir/bootstrap/cache
 
 RUN chown -R www-data:www-data /workdir/bootstrap/cache
 RUN chown -R www-data:www-data /workdir/storage

@@ -8,9 +8,6 @@ services:
       - type: bind
         source: ./.env
         target: /workdir/.env
-      - type: bind
-        source: ./storage/logs
-        target: /workdir/storage/logs
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     networks:
