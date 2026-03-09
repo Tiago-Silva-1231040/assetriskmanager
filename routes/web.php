@@ -42,6 +42,7 @@ Route::middleware([
     Route::resource("threats", ThreatController::class);
     Route::resource("controls", ControlController::class);
     Route::resource("assets", AssetController::class);
+    //Route::resource("incidents", IncidentController::class); TODO
     Route::middleware("ensureSecurityOfficer")->group(function () {
         Route::get("reports", ReportController::class)->name("reports");
         Route::view("exports","file-export.index")->name("exports");
